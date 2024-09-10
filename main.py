@@ -69,4 +69,4 @@ print("Mean Absolute Percentage Error:", mean_absolute_percentage_error(Y_valid,
 cb_model = CatBoostRegressor()
 cb_model.fit(X_train, Y_train)
 preds = cb_model.predict(X_valid)
-print("Mean Absolute Percentage Error:",mean_absolute_percentage_error(Y_valid, preds))
+print("Mean Absolute Percentage Error:",mean_absolute_percentage_error(Y_valid, Y_pred))
